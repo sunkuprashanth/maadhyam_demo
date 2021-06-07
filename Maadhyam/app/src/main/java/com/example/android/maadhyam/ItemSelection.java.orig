@@ -1,0 +1,103 @@
+package com.example.android.maadhyam;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class ItemSelection extends AppCompatActivity {
+
+<<<<<<< HEAD
+    LinearLayout t_category;
+=======
+    LinearLayout t_category,t_brand;
+>>>>>>> 6fc649b4b6418e37d52497754a61480bf6a3c271
+
+    Intent i_data;
+    TextView tv_category;
+    String category;
+    Button back, next;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_item_selection);
+
+        i_data = new Intent(ItemSelection.this,category.class);
+
+        t_category = findViewById(R.id.Category);
+
+<<<<<<< HEAD
+=======
+        t_brand = findViewById(R.id.Brand);
+        t_brand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ItemSelection.this,ItemConfirmation.class));
+            }
+        });
+>>>>>>> 6fc649b4b6418e37d52497754a61480bf6a3c271
+        tv_category = findViewById(R.id.tvCategory);
+
+        back = findViewById(R.id.btnBack);
+        next = findViewById(R.id.btnNext);
+
+        t_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goto_category(0,"Category");
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            if(category!=null) {
+                Intent confirmation_intent = new Intent(ItemSelection.this, SelectAndAddItems.class);
+                confirmation_intent.putExtra("Category", category);
+                startActivity(confirmation_intent);
+            }
+            else{
+                Toast.makeText(ItemSelection.this,"Please select all the fields",Toast.LENGTH_SHORT).show();
+            }
+            }
+        });
+
+    }
+
+    public void goto_category(int req_code,String sel) {
+
+        i_data.putExtra("selection",sel);
+
+        startActivityForResult(i_data,req_code);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        String returned_selection;
+        if(resultCode != 0) {
+            if (requestCode == 0) {
+                returned_selection = data.getStringExtra("item");
+                category = returned_selection;
+
+                i_data.putExtra("selected_category", category);
+                tv_category.setText(category);
+                tv_category.setTextColor(Color.BLACK);
+
+            }
+        }
+    }
+}

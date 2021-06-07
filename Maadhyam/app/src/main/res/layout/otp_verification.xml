@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_height="640dp"
+    android:background="@drawable/blue_background">
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="159dp"
+        android:layout_marginRight="159dp"
+        android:src="@mipmap/ic_launcher_round"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="295dp"
+        android:layout_height="504dp"
+        android:layout_marginLeft="32.5dp"
+        android:layout_marginRight="32.5dp"
+         android:layout_marginBottom="69dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="26dp"
+        android:padding="@dimen/card_padding"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation">
+        <ImageView
+            android:layout_width="184.2dp"
+            android:layout_height="120.1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="62.8dp"
+            android:src="@drawable/otp_icon"/>
+
+        <TextView
+            android:layout_width="151dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="187dp"
+            android:layout_marginRight="122.5dp"
+            android:text="Verify your Number"
+            android:textColor="#2c3e50"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:id="@+id/tvView"
+            android:layout_width="201dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="214dp"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginRight="72.5dp"
+            android:textSize="14sp"
+           />
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/et_style"/>
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="77dp"
+            android:background="@drawable/et_style1"/>
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="114dp"
+            android:background="@drawable/et_style1"/>
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="151dp"
+            android:background="@drawable/et_style1"/>
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="188dp"
+            android:background="@drawable/et_style1"/>
+        <EditText
+            android:id="@+id/et6"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="295dp"
+
+            android:layout_marginLeft="225dp"
+            android:background="@drawable/et_style"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="368dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginRight="106dp"
+            android:clickable="true"
+            android:text="@string/resend_code"
+            android:contextClickable="true"
+            android:textSize="14sp"
+            android:textColor="@color/solid_button_color"/>
+        <Button
+            android:id="@+id/conf_button"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="401dp"
+            android:layout_marginRight="61.5dp"
+            android:layout_marginLeft="61.5dp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/solid_button"/>
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginRight="96.5dp"
+            android:layout_marginLeft="96.5dp"
+            android:clickable="true"
+
+            android:text="Change Number"
+            android:textColor="@color/solid_button_color"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

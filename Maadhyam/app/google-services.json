@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "452089884721",
+    "firebase_url": "https://maadhyam-da779.firebaseio.com",
+    "project_id": "maadhyam-da779",
+    "storage_bucket": "maadhyam-da779.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452089884721:android:be45636a0aefde9eec6510",
+        "android_client_info": {
+          "package_name": "com.example.android.maadhyam"
+        }
+      },
+      "oauth_client": [
+        {
+
+          "client_id": "452089884721-2sqtlr8aj655lghtldngtnk1drhg9qcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.maadhyam",
+            "certificate_hash": "a4e1ea9e5f4956e0c3f97b29d4d38c7a65bc2340"
+          }
+        },
+        {
+          "client_id": "452089884721-2kk7f8etavmbv2u03ecgae9ccr5acslb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.maadhyam",
+            "certificate_hash": "d5863bc689cfc3e9ad9a6bbc1290315a0074358c"
+          }
+        },
+        {
+          "client_id": "452089884721-ie8kmmp344p8etq43rg7f0usrn2gq1do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCXiDiPjfoOy6uNcZcYpl0vNYmNrm18bE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452089884721-ie8kmmp344p8etq43rg7f0usrn2gq1do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

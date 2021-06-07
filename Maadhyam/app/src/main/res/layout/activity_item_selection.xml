@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".ItemSelection">
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="@dimen/logo_large_size"
+        android:layout_height="@dimen/logo_large_size"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/logo_very_short_margin"
+        android:contentDescription="@string/logo"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/selecting_items" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/longer_button_margin"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="0dp"
+        android:padding="@dimen/card_padding"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+            <LinearLayout
+                android:id="@+id/Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/TextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_category"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/drop_down"
+                    android:text="@string/Category"
+                    android:textColor="@color/hint_color"
+                    android:drawableEnd="@drawable/drop_down" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/Brand"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:clickable="false"-->
+<!--                android:layout_margin="@dimen/text_margin">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/TextView2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/select_brand"-->
+<!--                    android:textColor="@android:color/holo_blue_light" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvBrand"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableRight="@drawable/drop_down"-->
+<!--                    android:textColor="@color/hint_color"-->
+<!--                    android:text="@string/brand"-->
+<!--                    android:drawableEnd="@drawable/drop_down" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="#000000" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/Quantity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:clickable="false"-->
+<!--                android:layout_margin="@dimen/text_margin">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/TextView3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/select_quantity"-->
+<!--                    android:textColor="@android:color/holo_blue_light" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvQuantity"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableRight="@drawable/drop_down"-->
+<!--                    android:textColor="@color/hint_color"-->
+<!--                    android:text="@string/quantity"-->
+<!--                    android:drawableEnd="@drawable/drop_down" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="#000000"/>-->
+<!--            </LinearLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/title_margin"
+                >
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/solid_button_color"
+                    android:textAllCaps="false"
+                    android:background="@drawable/hollow_blue_button"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/title_margin_long"
+                    android:layout_marginEnd="@dimen/title_margin_long"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/solid_button"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

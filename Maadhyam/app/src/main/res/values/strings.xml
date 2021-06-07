@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Maadhyam</string>
+    <string name="logo">LOGO</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_your_number">&#x20;&#x20;Enter your Number</string>
+    <string name="next">Next</string>
+    <string name="back">&lt; Back</string>
+    <string name="new_user_register_here">New user register here?</string>
+    <string name="select_option">Select one of the below</string>
+    <string name="registered">Registered User</string>
+    <string name="unregistered">Unregistered User</string>
+    <string name="gst_input">Enter GST Number</string>
+    <string name="address">Enter Your Address</string>
+    <string name="alternate_mobile">Enter Alternate Phone No.</string>
+    <string name="choose_an_option">* choose any one option</string>
+    <string name="we_will_automatically_get_your_otp">We will automatically get your OTP.</string>
+    <string name="enter_otp">&#x20;&#x20;Enter OTP</string>
+    <string name="aadhar_number">Enter Aadhar Number</string>
+    <string name="Unregistered_User">Unregistered User</string>
+    <string name="pan_number">Enter PAN Number</string>
+    <string name="Reminder">Click here to remind you later</string>
+    <string name="skip_button">Skip</string>
+    <string name="Category">Category</string>
+    <string name="select_category">Select Category</string>
+    <string name="brand">Brand</string>
+    <string name="select_brand">Select Brands</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="quantity">Quantity</string>
+    <string name="choose_maps">Choose from maps</string>
+    <string name="confirm_your_essentials">Confirm Your Essentials</string>
+    <string name="net_amount">Net Amount: </string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="enter_your_delivery_location">Enter Your Delivery location</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="add_more">Add more items to cart</string>
+    <string name="one">1</string>
+    <string name="title_activity_delivery_maps">Map</string>
+    <string name="change_category">Change\nCategory</string>
+    <string name="resend_code">Resend Code</string>
+
+
+</resources>
